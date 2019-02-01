@@ -1,0 +1,9 @@
+USE master;
+GO
+
+RESTORE DATABASE AdventureWorks2012
+	FROM DATABASE_SNAPSHOT = 'AdventureWorks2012_SS';
+GO
+
+DROP DATABASE AdventureWorks2012_SS;
+GO
